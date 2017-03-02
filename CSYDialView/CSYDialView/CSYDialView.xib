@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="P1C-Xs-ygW" customClass="CSYDialView">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="550"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_a4_r23_c2" translatesAutoresizingMaskIntoConstraints="NO" id="qg9-TQ-Ygh">
+                    <rect key="frame" x="0.0" y="0.0" width="550" height="550"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_a4_r1_c4" translatesAutoresizingMaskIntoConstraints="NO" id="QPS-Ti-XZP">
+                    <rect key="frame" x="369" y="157" width="181" height="247"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vh-Vy-SMn">
+                    <rect key="frame" x="179" y="179" width="192" height="192"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <state key="normal" title="GO">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="clickGoButton:" destination="P1C-Xs-ygW" eventType="touchUpInside" id="EFu-2Q-iuk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qg9-TQ-Ygh" firstAttribute="top" secondItem="P1C-Xs-ygW" secondAttribute="top" id="67n-yZ-Li4"/>
+                <constraint firstItem="QPS-Ti-XZP" firstAttribute="width" secondItem="P1C-Xs-ygW" secondAttribute="width" multiplier="0.33" id="6ET-9Q-Lp5"/>
+                <constraint firstItem="1vh-Vy-SMn" firstAttribute="width" secondItem="P1C-Xs-ygW" secondAttribute="width" multiplier="0.35" id="DIm-cd-gDL"/>
+                <constraint firstItem="QPS-Ti-XZP" firstAttribute="centerY" secondItem="P1C-Xs-ygW" secondAttribute="centerY" multiplier="1.02" id="FfJ-Hu-Hpu"/>
+                <constraint firstAttribute="bottom" secondItem="qg9-TQ-Ygh" secondAttribute="bottom" id="GcZ-9c-rTC"/>
+                <constraint firstAttribute="trailing" secondItem="QPS-Ti-XZP" secondAttribute="trailing" id="JEv-WY-OWc"/>
+                <constraint firstItem="1vh-Vy-SMn" firstAttribute="centerX" secondItem="P1C-Xs-ygW" secondAttribute="centerX" id="KvK-OF-1dH"/>
+                <constraint firstItem="QPS-Ti-XZP" firstAttribute="height" secondItem="P1C-Xs-ygW" secondAttribute="height" multiplier="0.45" id="NuO-9N-Nki"/>
+                <constraint firstItem="1vh-Vy-SMn" firstAttribute="height" secondItem="P1C-Xs-ygW" secondAttribute="height" multiplier="0.35" id="Qgl-we-yJ8"/>
+                <constraint firstItem="1vh-Vy-SMn" firstAttribute="centerY" secondItem="P1C-Xs-ygW" secondAttribute="centerY" id="g90-n4-jQp"/>
+                <constraint firstItem="qg9-TQ-Ygh" firstAttribute="leading" secondItem="P1C-Xs-ygW" secondAttribute="leading" id="hyO-tO-M3f"/>
+                <constraint firstAttribute="trailing" secondItem="qg9-TQ-Ygh" secondAttribute="trailing" id="u7e-EI-S0n"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="goButton" destination="1vh-Vy-SMn" id="oEi-I1-dgR"/>
+            </connections>
+            <point key="canvasLocation" x="38" y="212"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_a4_r1_c4" width="92" height="123"/>
+        <image name="home_a4_r23_c2" width="288" height="288"/>
+    </resources>
+</document>
